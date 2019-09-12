@@ -37,7 +37,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #777777;
-  padding: 3rem; }
+  padding: .5rem; }
 
 .heading-primary {
   display: flex;
@@ -68,6 +68,7 @@ body {
 .heading-secondary {
   font-size: 2rem;
   text-transform: uppercase;
+  text-align: center;
   font-weight: 700;
   background-image: linear-gradient(to right, #ffffff, #ffffff);
   display: inline-block;
@@ -79,11 +80,28 @@ body {
     transform: skewY(1deg) skewX(10deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(17, 17, 0, 0.2); }
 
+.heading-tertiary {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1rem;
+  text-align: justify; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .u-center-text {
   text-align: center; }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-lg {
   margin-bottom: 8rem; }
+
+.u-margin-bottom-md {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-sm {
+  margin-bottom: 1.5rem; }
 
 .section-about {
   background-color: #000000;
@@ -110,7 +128,7 @@ body {
     height: 35px; }
 
 .row {
-  max-width: 114rem;
+  max-width: 1140px;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
@@ -119,8 +137,7 @@ body {
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    float: left;
-    text-align: center; }
+    float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
   .row .col-1-of-2 {
@@ -173,3 +190,47 @@ body {
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0; }
+
+.btn-text:link, .btn-text:visited {
+  color: #ffffff;
+  font-size: default-font-size;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #ffffff;
+  padding: .3rem;
+  transition: all .2s; }
+
+.btn-text:hover {
+  background-color: #ffffff;
+  color: #777777;
+  box-shadow: 0 1rem 2rem rgba(119, 119, 119, 0.3);
+  transform: tr anslateY(-0.2rem); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(119, 119, 119, 0.3);
+  transform: translateY(0); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    max-width: 18rem;
+    box-shadow: 0 1.5rem 4rem rgba(34, 34, 34, 0.4);
+    border-radius: .2rem;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: .7rem; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 2rem;
+      top: 10rem; }
+    .composition__photo:hover {
+      outline: 0.8rem solid rgba(17, 17, 0, 0.9);
+      transform: scale(1.05);
+      box-shadow: 0 2.5rem 4rem rgba(34, 34, 34, 0.4);
+      z-index: 20; }

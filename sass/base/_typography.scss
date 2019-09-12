@@ -5,7 +5,7 @@ body {
     font-size: 16px;
     line-height: 1.7;
     color: $color-grey-dark;
-    padding: 3rem;
+    padding: .5rem;
 }
 
 .heading-primary {
@@ -40,8 +40,9 @@ body {
 }
 
 .heading-secondary {
-    font-size: 2rem;
+    font-size: $font-size-lg;
     text-transform: uppercase;
+    text-align: center;
     font-weight: 700;
     background-image: linear-gradient(to right, $color-white, $color-white );
     display: inline-block;
@@ -53,5 +54,19 @@ body {
     &:hover {
         transform: skewY(1deg) skewX(10deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($color-primary-dark, 0.2);
+    } 
+}
+
+.heading-tertiary {
+    font-size: $font-size-md;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    text-align: justify;
+    &:not(:last-child) {
+        margin-bottom: 3rem;
     }
 }
