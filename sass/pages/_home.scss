@@ -3,3 +3,21 @@
     padding: 15rem 0;
     margin-top: -20vh
 }
+
+.section-features {
+    height: 95vh;
+    padding: 8rem 0;
+    background-color: rgba($color-primary-dark, 1);
+    // background: linear-gradient(to right, 
+    // rgba($color-black, 0.7), 
+    // rgba($color-black, 0.7)),
+    // url(../../images/joseph-chan-zEM8bsl0oF0-unsplash.jpg) center center/cover;
+    // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    transform: skewY(-7deg);
+    margin-top: -10rem;
+
+    & > * {
+        transform: skewY(7deg);  
+    }
+
+} 
